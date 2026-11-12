@@ -18,12 +18,12 @@ Este repositório contém a infraestrutura, landing pages, funis de conversão, 
 
 ## 2. Precificação & Funil de Vendas
 
-| Oferta | Preço | Posicionamento |
-| :--- | :--- | :--- |
-| **Plano Anual** | **R$ 10,00** | Entrada / barreira mínima de compra |
-| **Plano Vitalício** | **R$ 27,00** | **Carro-chefe / Maior valor percebido (Ancoragem)** |
-| *Order Bump Sugerido* | R$ 7,90 | Pack 1000 Frases Mais Usadas em Inglês + Flashcards Anki |
-| *Upsell Sugerido* | R$ 19,90 | Grupo VIP Vitalício de Atualizações + Suporte Prioritário WhatsApp |
+| Oferta | Preço | Link de Checkout (Lowify) | Posicionamento |
+| :--- | :--- | :--- | :--- |
+| **Plano Anual** | **R$ 10,00** | [Checkout Lowify R$ 10](https://pay.lowify.com.br/checkout.php?product_id=RfJMkK) | Entrada / barreira mínima de compra |
+| **Plano Vitalício** | **R$ 27,00** | [Checkout Lowify R$ 27](https://pay.lowify.com.br/go.php?offer=cec5a81e) | **Carro-chefe / Maior valor percebido (Ancoragem)** |
+| *Order Bump Sugerido* | R$ 7,90 | Configurar no checkout | Pack 1000 Frases Mais Usadas + Flashcards |
+| *Upsell Sugerido* | R$ 19,90 | Configurar 1-clique | Grupo VIP Vitalício + Suporte WhatsApp |
 
 ---
 
