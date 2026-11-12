@@ -1,36 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" class="scroll-smooth">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Duolingo Super Premium - Vidas Infinitas & Sem Anúncios</title>
-  <!-- Favicon -->
+  <title>Duolingo Max - Vidas Infinitas & Sem Anúncios</title>
   <link rel="icon" type="image/png" href="assets/logo.png">
-  <!-- Google Fonts: Nunito -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
-  <!-- Tailwind CSS CDN -->
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@500;700;800;900&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
       theme: {
         extend: {
           fontFamily: {
-            sans: ['Nunito', 'sans-serif'],
+            sans: ['Nunito', 'system-ui', 'sans-serif'],
           },
           colors: {
-            duo: {
+            brand: {
               green: '#58CC02',
               greenDark: '#46A302',
               blue: '#1CB0F6',
               blueDark: '#1899D6',
-              yellow: '#FFC800',
-              yellowDark: '#E5A500',
-              red: '#FF4B4B',
-              grayDark: '#4B4B4B',
-              grayLight: '#E5E5E5',
-              cardBg: '#FFFFFF',
             }
           }
         }
@@ -38,389 +29,178 @@
     }
   </script>
   <style>
-    .duo-btn-green {
+    .btn-green {
       background-color: #58CC02;
       box-shadow: 0 4px 0 #46A302;
-      transition: all 0.1s ease-in-out;
     }
-    .duo-btn-green:hover {
-      background-color: #61db02;
+    .btn-green:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #46A302;
     }
-    .duo-btn-green:active {
-      transform: translateY(3px);
-      box-shadow: 0 1px 0 #46A302;
-    }
-
-    .duo-btn-blue {
+    .btn-blue {
       background-color: #1CB0F6;
       box-shadow: 0 4px 0 #1899D6;
-      transition: all 0.1s ease-in-out;
     }
-    .duo-btn-blue:hover {
-      background-color: #28b8fd;
-    }
-    .duo-btn-blue:active {
-      transform: translateY(3px);
-      box-shadow: 0 1px 0 #1899D6;
-    }
-
-    .duo-btn-yellow {
-      background-color: #FFC800;
-      box-shadow: 0 4px 0 #E5A500;
-      transition: all 0.1s ease-in-out;
-    }
-    .duo-btn-yellow:active {
-      transform: translateY(3px);
-      box-shadow: 0 1px 0 #E5A500;
-    }
-
-    .duo-card {
-      border: 2px solid #E5E5E5;
-      box-shadow: 0 4px 0 #E5E5E5;
+    .btn-blue:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #1899D6;
     }
   </style>
 </head>
-<body class="bg-[#F7F7F7] text-[#4B4B4B] font-sans antialiased selection:bg-duo-green selection:text-white">
+<body class="bg-white text-slate-800 font-sans antialiased">
 
-  <!-- Top Urgency Bar -->
-  <div class="bg-duo-yellow text-slate-900 text-center py-2 px-4 text-xs sm:text-sm font-extrabold uppercase tracking-wide flex items-center justify-center gap-2">
-    <span>🔥 OFERTA DE RELANÇAMENTO: VAGAS LIMITADAS PARA ESTE LOTE</span>
-  </div>
-
-  <!-- Header -->
-  <header class="bg-white border-b-2 border-duo-grayLight py-3 px-4 sm:px-8 sticky top-0 z-50">
-    <div class="max-w-4xl mx-auto flex items-center justify-between">
+  <!-- Header Clean -->
+  <header class="border-b border-slate-100 py-3.5 px-4 sm:px-6">
+    <div class="max-w-3xl mx-auto flex items-center justify-between">
       <div class="flex items-center gap-2.5">
-        <img src="assets/logo.png" alt="Duolingo Super Pro" class="w-10 h-9 object-contain rounded-lg shadow-sm">
-        <div class="flex flex-col">
-          <span class="text-xl font-black text-duo-green tracking-tight leading-none">duolingo</span>
-          <span class="text-[10px] font-black uppercase text-duo-blue tracking-widest">SUPER PRO MAX</span>
-        </div>
+        <img src="assets/logo.png" alt="Duolingo Max" class="w-8 h-8 object-contain rounded-lg">
+        <span class="font-black text-lg tracking-tight text-slate-900">duolingo <span class="text-brand-green">max</span></span>
       </div>
-      <a href="#planos" class="duo-btn-green text-white font-extrabold text-xs sm:text-sm px-4 py-2 rounded-2xl uppercase">
-        Garantir Acesso
+      <a href="#planos" class="btn-green text-white font-extrabold text-xs px-4 py-2 rounded-xl uppercase tracking-wider">
+        Ver Planos
       </a>
     </div>
   </header>
 
-  <!-- Hero Section -->
-  <section class="max-w-4xl mx-auto px-4 pt-8 pb-12 text-center">
+  <!-- Hero Section Direta ao Ponto -->
+  <section class="max-w-2xl mx-auto px-4 pt-10 pb-8 text-center">
     
-    <!-- Hero Logo / Owl Mascot with Crown -->
-    <div class="flex justify-center mb-5">
-      <div class="relative inline-block group">
-        <div class="absolute -inset-1 bg-gradient-to-r from-duo-green via-duo-blue to-duo-yellow rounded-3xl blur-md opacity-40 group-hover:opacity-75 transition duration-300"></div>
-        <div class="relative bg-black rounded-3xl p-3 border-2 border-gray-800 shadow-xl flex flex-col items-center">
-          <img src="assets/logo.png" alt="Duolingo Super Pro Mascot" class="w-28 sm:w-36 h-auto object-contain">
-          <span class="text-[10px] font-black tracking-widest text-duo-yellow uppercase mt-1">EDIÇÃO COROADA VITALÍCIA</span>
-        </div>
-      </div>
+    <div class="inline-block mb-5">
+      <img src="assets/logo.png" alt="Duolingo Max Coroa" class="w-24 sm:w-28 h-auto mx-auto drop-shadow-md">
     </div>
 
-    <div class="inline-flex items-center gap-2 bg-green-100 text-duo-greenDark px-3.5 py-1.5 rounded-full text-xs sm:text-sm font-black mb-4">
-      <span>✨ 100% Compatível com Android & iOS (iPhone/iPad)</span>
-    </div>
-
-    <h1 class="text-3xl sm:text-5xl font-black text-[#3C3C3C] leading-tight mb-4">
-      Desbloqueie o Duolingo com <br class="hidden sm:inline">
-      <span class="text-duo-green underline decoration-wavy decoration-duo-yellow">Vidas Ilimitadas</span>, <span class="text-duo-blue">Zero Anúncios</span> & <span class="text-purple-600">IA</span>!
+    <h1 class="text-3xl sm:text-4xl font-black text-slate-900 tracking-tight leading-tight mb-3">
+      Duolingo com vidas infinitas e sem anúncios.
     </h1>
 
-    <p class="text-base sm:text-lg text-gray-600 max-w-2xl mx-auto mb-8 font-medium">
-      Cansado de errar uma lição e ter que esperar horas para voltar a estudar? Tenha todas as vantagens do <strong>Duolingo Super & Max</strong> sem pagar a mensalidade absurda de R$ 32,90/mês.
+    <p class="text-base sm:text-lg text-slate-600 font-bold mb-6">
+      Funciona no Android e iOS. Mantém sua conta e todo o seu progresso.
     </p>
 
-    <!-- Key Feature Badges (5 Pontos do Criativo) -->
-    <div class="grid grid-cols-2 sm:grid-cols-5 gap-3 max-w-3xl mx-auto mb-8 text-left">
-      <div class="duo-card bg-white p-3 rounded-2xl flex flex-col justify-center">
-        <span class="text-2xl mb-1">❤️</span>
-        <div class="text-xs font-bold leading-tight">
-          <span class="text-duo-red font-black">Vidas Ilimitadas</span><br><span class="text-gray-500 font-medium text-[11px]">Nunca mais pare</span>
-        </div>
-      </div>
-      <div class="duo-card bg-white p-3 rounded-2xl flex flex-col justify-center">
-        <span class="text-2xl mb-1">🚫</span>
-        <div class="text-xs font-bold leading-tight">
-          <span class="text-duo-blue font-black">Sem Anúncios</span><br><span class="text-gray-500 font-medium text-[11px]">Foco 100% total</span>
-        </div>
-      </div>
-      <div class="duo-card bg-white p-3 rounded-2xl flex flex-col justify-center">
-        <span class="text-2xl mb-1">✈️</span>
-        <div class="text-xs font-bold leading-tight">
-          <span class="text-duo-green font-black">Modo Offline</span><br><span class="text-gray-500 font-medium text-[11px]">Estude sem internet</span>
-        </div>
-      </div>
-      <div class="duo-card bg-white p-3 rounded-2xl flex flex-col justify-center">
-        <span class="text-2xl mb-1">🤖</span>
-        <div class="text-xs font-bold leading-tight">
-          <span class="text-purple-600 font-black">Conversa com IA</span><br><span class="text-gray-500 font-medium text-[11px]">Prática de diálogo</span>
-        </div>
-      </div>
-      <div class="duo-card bg-white p-3 rounded-2xl flex flex-col justify-center col-span-2 sm:col-span-1">
-        <span class="text-2xl mb-1">⚡</span>
-        <div class="text-xs font-bold leading-tight">
-          <span class="text-duo-yellowDark font-black">Treinos Personalizados</span><br><span class="text-gray-500 font-medium text-[11px]">Revisão de erros</span>
-        </div>
-      </div>
+    <!-- 5 Pilares em Pills Simples e Objetivas -->
+    <div class="flex flex-wrap items-center justify-center gap-2 mb-8">
+      <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">❤️ Vidas ilimitadas</span>
+      <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">🚫 Zero anúncios</span>
+      <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">✈️ Modo offline</span>
+      <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">🤖 Conversa com IA</span>
+      <span class="bg-slate-100 text-slate-700 text-xs font-bold px-3 py-1.5 rounded-full">⚡ Treino de erros</span>
     </div>
 
-    <!-- CTA Button Anchor -->
-    <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
-      <a href="#planos" class="duo-btn-green w-full sm:w-auto text-white font-black text-lg px-8 py-4 rounded-2xl uppercase tracking-wider block">
-        QUERO MEU ACESSO AGORA A PARTIR DE R$ 10
-      </a>
-    </div>
-    <p class="text-xs text-gray-400 mt-2 font-bold">⚡ Ativação Imediata após confirmação</p>
+    <a href="#planos" class="btn-green inline-block text-white font-black text-base px-8 py-3.5 rounded-2xl uppercase tracking-wider">
+      Liberar meu acesso agora
+    </a>
   </section>
 
-  <!-- Comparison Section -->
-  <section class="bg-white border-y-2 border-duo-grayLight py-12 px-4">
-    <div class="max-w-3xl mx-auto">
-      <h2 class="text-2xl sm:text-3xl font-black text-center mb-2">Compare e Veja a Diferença</h2>
-      <p class="text-center text-gray-500 mb-8 text-sm sm:text-base font-medium">Veja porque mais de 4.800 alunos já ativaram</p>
-
-      <div class="duo-card rounded-2xl overflow-hidden bg-white">
-        <div class="grid grid-cols-3 bg-gray-50 border-b-2 border-duo-grayLight p-4 font-black text-xs sm:text-sm text-center">
-          <div class="text-left">Recurso</div>
-          <div class="text-gray-400">Duolingo Grátis</div>
-          <div class="text-duo-green font-black">Plano Super Pro</div>
-        </div>
-
-        <div class="divide-y divide-gray-100 text-xs sm:text-sm font-semibold">
-          <div class="grid grid-cols-3 p-4 items-center text-center">
-            <span class="text-left font-bold">Vidas / Corações</span>
-            <span class="text-duo-red">Apenas 5 vidas</span>
-            <span class="text-duo-green font-black">❤️ Infinitas</span>
-          </div>
-          <div class="grid grid-cols-3 p-4 items-center text-center">
-            <span class="text-left font-bold">Propagandas</span>
-            <span class="text-duo-red">A cada 2 lições</span>
-            <span class="text-duo-green font-black">🚫 Zero anúncios</span>
-          </div>
-          <div class="grid grid-cols-3 p-4 items-center text-center">
-            <span class="text-left font-bold">Revisão de Erros</span>
-            <span class="text-gray-400">Bloqueado</span>
-            <span class="text-duo-green font-black">✅ Liberado</span>
-          </div>
-          <div class="grid grid-cols-3 p-4 items-center text-center">
-            <span class="text-left font-bold">Modo Offline</span>
-            <span class="text-gray-400">Não incluso</span>
-            <span class="text-duo-green font-black">✅ Liberado</span>
-          </div>
-          <div class="grid grid-cols-3 p-4 items-center text-center bg-green-50">
-            <span class="text-left font-black text-gray-800">Preço</span>
-            <span class="text-gray-500 line-through">R$ 32,90/mês</span>
-            <span class="text-duo-green font-black text-base sm:text-lg">Apenas R$ 10 ou R$ 27 vitalício</span>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Real Testimonials / Social Proof Section -->
-  <section class="max-w-4xl mx-auto px-4 py-12">
+  <!-- Seção de Planos Direta e Limpa -->
+  <section id="planos" class="max-w-3xl mx-auto px-4 py-12">
     <div class="text-center mb-8">
-      <span class="bg-blue-100 text-duo-blueDark text-xs font-black px-3.5 py-1.5 rounded-full uppercase tracking-wider inline-block mb-2">
-        💬 QUEM ATIVOU, APROVOU
-      </span>
-      <h2 class="text-2xl sm:text-3xl font-black text-gray-800">Veja o Que Nossos Alunos Falam</h2>
-      <p class="text-sm text-gray-500 font-medium">Prints reais de quem já recebeu e ativou o Duolingo Max no celular</p>
+      <h2 class="text-2xl font-black text-slate-900">Escolha o seu plano</h2>
+      <p class="text-sm text-slate-500 font-medium">Pagamento único. Sem renovação automática.</p>
     </div>
 
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+    <div class="grid sm:grid-cols-2 gap-5 max-w-xl mx-auto">
       
-      <!-- Depoimento 1 -->
-      <div class="duo-card bg-white rounded-3xl p-3 shadow-md flex flex-col items-center">
-        <div class="rounded-2xl overflow-hidden border border-gray-200 w-full mb-3 bg-gray-50">
-          <img src="assets/depoimento1.jpg" alt="Depoimento Aluno 1" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
-        </div>
-        <div class="text-center p-2">
-          <div class="text-xs font-extrabold text-duo-green mb-1">⭐⭐⭐⭐⭐ Ativado na hora</div>
-          <p class="text-xs text-gray-600 font-bold">"Fiz login normal e já apareceu o Duolingo Max liberado!"</p>
-        </div>
-      </div>
-
-      <!-- Depoimento 2 -->
-      <div class="duo-card bg-white rounded-3xl p-3 shadow-md flex flex-col items-center">
-        <div class="rounded-2xl overflow-hidden border border-gray-200 w-full mb-3 bg-gray-50">
-          <img src="assets/depoimento2.jpg" alt="Depoimento Aluno 2" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
-        </div>
-        <div class="text-center p-2">
-          <div class="text-xs font-extrabold text-duo-green mb-1">⭐⭐⭐⭐⭐ Não perde progresso</div>
-          <p class="text-xs text-gray-600 font-bold">"Funcionou perfeito e manteve todas as minhas lições salvas!"</p>
-        </div>
-      </div>
-
-      <!-- Depoimento 3 -->
-      <div class="duo-card bg-white rounded-3xl p-3 shadow-md flex flex-col items-center">
-        <div class="rounded-2xl overflow-hidden border border-gray-200 w-full mb-3 bg-gray-50">
-          <img src="assets/depoimento3.jpg" alt="Depoimento Aluno 3" class="w-full h-auto object-cover hover:scale-105 transition duration-300">
-        </div>
-        <div class="text-center p-2">
-          <div class="text-xs font-extrabold text-duo-green mb-1">⭐⭐⭐⭐⭐ Recursos Max Liberados</div>
-          <p class="text-xs text-gray-600 font-bold">"Vidas ilimitadas + treinos personalizados, sensacional!"</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Pricing Section -->
-  <section id="planos" class="max-w-4xl mx-auto px-4 py-16">
-    <div class="text-center mb-10">
-      <h2 class="text-3xl sm:text-4xl font-black mb-3">Escolha Seu Plano de Acesso</h2>
-      <p class="text-gray-600 font-medium">Pagamento único via PIX ou Cartão. Sem assinaturas surpresa.</p>
-    </div>
-
-    <div class="grid sm:grid-cols-2 gap-6 max-w-3xl mx-auto">
-      
-      <!-- Plano Anual (R$ 10) -->
-      <div class="duo-card bg-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative">
+      <!-- Plano Anual R$ 10 -->
+      <div class="border-2 border-slate-200 rounded-3xl p-6 flex flex-col justify-between bg-slate-50/50">
         <div>
-          <span class="bg-gray-100 text-gray-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4">
-            Acesso 1 Ano
-          </span>
-          <h3 class="text-2xl font-black text-gray-800 mb-1">Plano Anual</h3>
-          <p class="text-xs text-gray-500 mb-6 font-medium">Ideal para quem quer experimentar agora gastando o mínimo possível.</p>
-
-          <div class="mb-6">
-            <span class="text-gray-400 text-sm line-through block">De R$ 49,90</span>
+          <span class="text-xs font-black uppercase text-slate-500 tracking-wider">1 Ano de Acesso</span>
+          <h3 class="text-xl font-black text-slate-900 mt-1 mb-2">Plano Anual</h3>
+          
+          <div class="mb-5">
+            <span class="text-xs text-slate-400 line-through">R$ 49,90</span>
             <div class="flex items-baseline gap-1">
-              <span class="text-sm font-black text-gray-600">R$</span>
-              <span class="text-4xl font-black text-gray-900">10</span>
-              <span class="text-xs text-gray-500 font-bold">/ano único</span>
+              <span class="text-xs font-bold text-slate-500">R$</span>
+              <span class="text-4xl font-black text-slate-900">10</span>
+              <span class="text-xs font-bold text-slate-500">único</span>
             </div>
           </div>
 
-          <ul class="space-y-3 text-sm font-bold text-gray-600 mb-8">
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Vidas e corações infinitos
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> 100% sem anúncios
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Compatível com Android & iOS
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Mantém seu progresso e conta
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Acesso garantido por 12 meses
-            </li>
-          </ul>
+          <p class="text-xs text-slate-600 font-semibold mb-6 leading-relaxed">
+            Todos os recursos liberados (vidas infinitas, sem anúncios e IA) por 12 meses no seu aparelho.
+          </p>
         </div>
 
-        <a href="#checkout-link-anual" class="duo-btn-blue text-white text-center font-black py-4 px-6 rounded-2xl uppercase tracking-wider text-sm block">
-          Garantir Plano Anual - R$ 10
+        <a href="#checkout-anual" class="btn-blue text-white text-center font-black py-3 px-4 rounded-xl text-xs uppercase tracking-wider block">
+          Garantir Anual por R$ 10
         </a>
       </div>
 
-      <!-- Plano Vitalício (R$ 27) - Destaque -->
-      <div class="duo-card bg-white rounded-3xl p-6 sm:p-8 flex flex-col justify-between relative border-duo-green border-2 ring-4 ring-green-100">
-        <div class="absolute -top-3.5 right-6 bg-duo-yellow text-slate-900 text-[11px] font-black uppercase px-3 py-1 rounded-full shadow-sm tracking-wider">
-          🔥 MAIS VENDIDO / VITALÍCIO
+      <!-- Plano Vitalício R$ 27 -->
+      <div class="border-2 border-brand-green rounded-3xl p-6 flex flex-col justify-between bg-white relative shadow-sm">
+        <div class="absolute -top-3 right-6 bg-brand-green text-white text-[10px] font-black uppercase px-2.5 py-0.5 rounded-full">
+          Recomendado
         </div>
 
         <div>
-          <span class="bg-green-100 text-duo-greenDark text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider inline-block mb-4">
-            Acesso Para Sempre
-          </span>
-          <h3 class="text-2xl font-black text-gray-800 mb-1">Plano Vitalício</h3>
-          <p class="text-xs text-gray-500 mb-6 font-medium">Pague uma única vez e nunca mais se preocupe com renovação ou mensalidade.</p>
-
-          <div class="mb-6">
-            <span class="text-gray-400 text-sm line-through block">De R$ 97,00</span>
+          <span class="text-xs font-black uppercase text-brand-greenDark tracking-wider">Acesso Definitivo</span>
+          <h3 class="text-xl font-black text-slate-900 mt-1 mb-2">Plano Vitalício</h3>
+          
+          <div class="mb-5">
+            <span class="text-xs text-slate-400 line-through">R$ 97,00</span>
             <div class="flex items-baseline gap-1">
-              <span class="text-sm font-black text-duo-greenDark">R$</span>
-              <span class="text-5xl font-black text-duo-green">27</span>
-              <span class="text-xs text-gray-500 font-bold">/pagamento único</span>
+              <span class="text-xs font-bold text-slate-500">R$</span>
+              <span class="text-4xl font-black text-brand-green">27</span>
+              <span class="text-xs font-bold text-slate-500">único</span>
             </div>
           </div>
 
-          <ul class="space-y-3 text-sm font-bold text-gray-700 mb-8">
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> <strong>Acesso Vitalício Completo</strong>
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Vidas e corações infinitos
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Zero anúncios e modo offline
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Todas as atualizações futuras
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Suporte VIP prioritário no WhatsApp
-            </li>
-            <li class="flex items-center gap-2">
-              <span class="text-duo-green text-lg">✓</span> Bônus: Guia de Memorização Acelerada
-            </li>
-          </ul>
+          <p class="text-xs text-slate-600 font-semibold mb-6 leading-relaxed">
+            Acesso vitalício completo com atualizações futuras incluídas e suporte direto no WhatsApp.
+          </p>
         </div>
 
-        <a href="#checkout-link-vitalicio" class="duo-btn-green text-white text-center font-black py-4 px-6 rounded-2xl uppercase tracking-wider text-base block">
-          QUERO O VITALÍCIO POR R$ 27
+        <a href="#checkout-vitalicio" class="btn-green text-white text-center font-black py-3 px-4 rounded-xl text-xs uppercase tracking-wider block">
+          Garantir Vitalício por R$ 27
         </a>
       </div>
 
     </div>
   </section>
 
-  <!-- FAQ Section -->
-  <section class="max-w-2xl mx-auto px-4 pb-16">
-    <h2 class="text-2xl sm:text-3xl font-black text-center mb-8">Perguntas Frequentes</h2>
+  <!-- Prova Social Real (Prints Rápidos) -->
+  <section class="max-w-3xl mx-auto px-4 py-8 border-t border-slate-100">
+    <div class="text-center mb-6">
+      <h2 class="text-xl font-black text-slate-900">Quem comprou, ativou na hora</h2>
+    </div>
 
-    <div class="space-y-4">
-      <details class="duo-card bg-white rounded-2xl p-4 font-bold text-sm cursor-pointer">
-        <summary class="flex justify-between items-center text-gray-800">
-          Como funciona a instalação no Android e iOS?
-          <span class="text-duo-green text-xl font-black">+</span>
-        </summary>
-        <p class="mt-3 text-gray-600 font-normal leading-relaxed text-xs sm:text-sm">
-          Imediatamente após a confirmação do pagamento, você recebe na hora o acesso à nossa página de membros com os instaladores atualizados e um vídeo tutorial de 2 minutos explicando passo a passo para Android e iOS.
-        </p>
-      </details>
-
-      <details class="duo-card bg-white rounded-2xl p-4 font-bold text-sm cursor-pointer">
-        <summary class="flex justify-between items-center text-gray-800">
-          Eu vou perder meu progresso ou ofensiva atual?
-          <span class="text-duo-green text-xl font-black">+</span>
-        </summary>
-        <p class="mt-3 text-gray-600 font-normal leading-relaxed text-xs sm:text-sm">
-          Não! Você continuará utilizando a sua conta normalmente e todo o seu progresso, nível, histórico de ofensivas e pontuação continuarão salvos.
-        </p>
-      </details>
-
-      <details class="duo-card bg-white rounded-2xl p-4 font-bold text-sm cursor-pointer">
-        <summary class="flex justify-between items-center text-gray-800">
-          É seguro para o meu celular?
-          <span class="text-duo-green text-xl font-black">+</span>
-        </summary>
-        <p class="mt-3 text-gray-600 font-normal leading-relaxed text-xs sm:text-sm">
-          Sim, 100% seguro e verificado. Não solicitamos dados de cartão dentro do app e os arquivos são testados e livres de vírus ou malwares.
-        </p>
-      </details>
-
-      <details class="duo-card bg-white rounded-2xl p-4 font-bold text-sm cursor-pointer">
-        <summary class="flex justify-between items-center text-gray-800">
-          Tem garantia se eu não conseguir usar?
-          <span class="text-duo-green text-xl font-black">+</span>
-        </summary>
-        <p class="mt-3 text-gray-600 font-normal leading-relaxed text-xs sm:text-sm">
-          Sim! Oferecemos 7 dias de garantia incondicional. Se você não conseguir instalar ou não gostar por qualquer motivo, basta nos chamar no suporte e devolvemos seu dinheiro na hora via PIX.
-        </p>
-      </details>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 max-w-2xl mx-auto">
+      <div class="border border-slate-200 rounded-2xl p-2 bg-slate-50/50">
+        <img src="assets/depoimento1.jpg" alt="Depoimento 1" class="rounded-xl w-full">
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-2 bg-slate-50/50">
+        <img src="assets/depoimento2.jpg" alt="Depoimento 2" class="rounded-xl w-full">
+      </div>
+      <div class="border border-slate-200 rounded-2xl p-2 bg-slate-50/50">
+        <img src="assets/depoimento3.jpg" alt="Depoimento 3" class="rounded-xl w-full">
+      </div>
     </div>
   </section>
 
-  <!-- Footer -->
-  <footer class="bg-white border-t-2 border-duo-grayLight py-8 px-4 text-center text-xs text-gray-400 font-medium">
-    <div class="max-w-4xl mx-auto space-y-2">
-      <p>© 2026 Duolingo Super Pro Acesso. Todos os direitos reservados.</p>
-      <p>Este site não possui vínculo institucional com o Duolingo Inc. Trata-se de tutoriais, métodos de licenciamento e acessos independentes.</p>
+  <!-- FAQ Direto em 3 Perguntas -->
+  <section class="max-w-xl mx-auto px-4 py-10 border-t border-slate-100">
+    <h2 class="text-xl font-black text-slate-900 text-center mb-6">Dúvidas rápidas</h2>
+
+    <div class="space-y-3 text-sm">
+      <div class="border border-slate-200 rounded-2xl p-4">
+        <h3 class="font-black text-slate-800 mb-1">Vou perder meu progresso ou ofensiva atual?</h3>
+        <p class="text-slate-600 font-medium text-xs">Não. Você continua na sua conta e mantém todas as suas lições e pontos salvos.</p>
+      </div>
+
+      <div class="border border-slate-200 rounded-2xl p-4">
+        <h3 class="font-black text-slate-800 mb-1">Como recebo o acesso?</h3>
+        <p class="text-slate-600 font-medium text-xs">Imediatamente após a confirmação do pagamento, você recebe os instaladores e o tutorial passo a passo para Android e iPhone.</p>
+      </div>
+
+      <div class="border border-slate-200 rounded-2xl p-4">
+        <h3 class="font-black text-slate-800 mb-1">Tem garantia?</h3>
+        <p class="text-slate-600 font-medium text-xs">Sim, 7 dias de garantia incondicional. Se não conseguir instalar, devolvemos seu dinheiro via PIX.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- Footer Simples -->
+  <footer class="border-t border-slate-100 py-6 px-4 text-center text-xs text-slate-400">
+    <p>© 2026 Duolingo Max Acesso. Todos os direitos reservados.</p>
   </footer>
 
 </body>
