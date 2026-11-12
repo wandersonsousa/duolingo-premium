@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Acesso Liberado - Duolingo Super Pro</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['Nunito', 'sans-serif'],
+          },
+          colors: {
+            duo: {
+              green: '#58CC02',
+              greenDark: '#46A302',
+              blue: '#1CB0F6',
+              blueDark: '#1899D6',
+              yellow: '#FFC800',
+              yellowDark: '#E5A500',
+              red: '#FF4B4B',
+              grayDark: '#4B4B4B',
+              grayLight: '#E5E5E5',
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .duo-btn-green {
+      background-color: #58CC02;
+      box-shadow: 0 4px 0 #46A302;
+    }
+    .duo-btn-green:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #46A302;
+    }
+    .duo-btn-blue {
+      background-color: #1CB0F6;
+      box-shadow: 0 4px 0 #1899D6;
+    }
+    .duo-btn-blue:active {
+      transform: translateY(2px);
+      box-shadow: 0 2px 0 #1899D6;
+    }
+    .duo-card {
+      border: 2px solid #E5E5E5;
+      box-shadow: 0 4px 0 #E5E5E5;
+    }
+  </style>
+</head>
+<body class="bg-[#F7F7F7] text-[#4B4B4B] font-sans antialiased">
+
+  <header class="bg-white border-b-2 border-duo-grayLight py-4 px-4 text-center">
+    <div class="flex items-center justify-center gap-2">
+      <span class="text-3xl">🎉</span>
+      <h1 class="text-xl font-black text-duo-green">Pagamento Confirmado! Seu Acesso Está Liberado</h1>
+    </div>
+  </header>
+
+  <main class="max-w-2xl mx-auto px-4 py-8">
+    
+    <!-- Welcome card -->
+    <div class="duo-card bg-white rounded-3xl p-6 mb-8 text-center">
+      <span class="text-5xl mb-2 inline-block">🦉</span>
+      <h2 class="text-2xl font-black text-gray-800 mb-2">Bem-vindo ao Duolingo Super Pro!</h2>
+      <p class="text-sm text-gray-600 font-medium">Siga as instruções abaixo de acordo com o seu aparelho (Android ou iPhone) para instalar e ativar agora mesmo.</p>
+    </div>
+
+    <!-- Android Delivery Block -->
+    <div class="duo-card bg-white rounded-3xl p-6 mb-6">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-3xl">🤖</span>
+        <div>
+          <h3 class="text-lg font-black text-gray-800">Passo a Passo: Android</h3>
+          <p class="text-xs text-gray-500">Instalação direta via APK seguro e atualizado</p>
+        </div>
+      </div>
+
+      <ol class="space-y-3 text-sm font-semibold text-gray-700 list-decimal list-inside mb-6">
+        <li>Clique no botão verde abaixo para baixar a versão mais recente do aplicativo.</li>
+        <li>Ao concluir o download, abra o arquivo e permita "Instalar de fontes desconhecidas".</li>
+        <li>Abra o aplicativo, faça login na sua conta existente e aproveite corações infinitos!</li>
+      </ol>
+
+      <a id="btn-download-android" href="#" class="duo-btn-green w-full block text-center text-white font-black py-4 rounded-2xl uppercase tracking-wider text-sm">
+        📥 BAIXAR INSTALADOR ANDROID (.APK)
+      </a>
+    </div>
+
+    <!-- iOS Delivery Block -->
+    <div class="duo-card bg-white rounded-3xl p-6 mb-6">
+      <div class="flex items-center gap-3 mb-4">
+        <span class="text-3xl">🍎</span>
+        <div>
+          <h3 class="text-lg font-black text-gray-800">Passo a Passo: iOS (iPhone / iPad)</h3>
+          <p class="text-xs text-gray-500">Ativação direta na sua conta da App Store</p>
+        </div>
+      </div>
+
+      <ol class="space-y-3 text-sm font-semibold text-gray-700 list-decimal list-inside mb-6">
+        <li>Clique no botão azul abaixo para abrir o tutorial guiado de ativação no iPhone.</li>
+        <li>Insira o e-mail cadastrado na sua compra para receber o convite do grupo familiar/licença.</li>
+        <li>Aceite o convite e abra seu Duolingo oficial com o Super ativado.</li>
+      </ol>
+
+      <a id="btn-tutorial-ios" href="#" class="duo-btn-blue w-full block text-center text-white font-black py-4 rounded-2xl uppercase tracking-wider text-sm">
+        📱 ATIVAR NO IPHONE / IPAD
+      </a>
+    </div>
+
+    <!-- VIP Support Block -->
+    <div class="duo-card bg-green-50 border-green-200 rounded-3xl p-6 text-center">
+      <h3 class="text-base font-black text-green-900 mb-1">Precisa de Ajuda ou Suporte?</h3>
+      <p class="text-xs text-green-700 font-medium mb-4">Nossa equipe de suporte técnico está à disposição no WhatsApp para te ajudar a instalar.</p>
+      <a href="https://wa.me/?text=Olá,%20comprei%20o%20Duolingo%20Super%20e%20preciso%20de%20ajuda%20com%20meu%20acesso." target="_blank" class="inline-flex items-center justify-center gap-2 bg-[#25D366] text-white font-black py-3 px-6 rounded-2xl text-sm shadow-md hover:bg-[#20ba5a]">
+        <span>💬 Chamar Suporte no WhatsApp</span>
+      </a>
+    </div>
+
+  </main>
+
+  <footer class="text-center py-6 text-xs text-gray-400">
+    © 2026 Duolingo Super Pro. Suporte: suporte@duolingopro.com
+  </footer>
+
+</body>
+</html>
