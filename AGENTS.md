@@ -27,15 +27,21 @@ Este repositório contém a infraestrutura, landing pages, funis de conversão, 
 
 ---
 
-## 3. Identidade Visual & UI Guidelines
-
-A identidade visual deve espelhar a sensação do aplicativo Duolingo, gerando reconhecimento imediato e altíssima confiança:
-
+- **Logo Oficial do Projeto:**
+  - Arquivo: [`assets/logo.png`](file:///home/wanderson/.t3/projects/duolingopro/assets/logo.png) (Coruja Duolingo com textura diamante/gradiente e coroa dourada imperial).
+  - Referência original: [`assets/creative_ref.png`](file:///home/wanderson/.t3/projects/duolingopro/assets/creative_ref.png).
+- **Os 5 Benefícios-Chave da Oferta:**
+  1. **Sem Anúncios** (Foco 100% sem interrupções)
+  2. **Modo Offline** (Estudar sem gastar dados móveis ou sem sinal)
+  3. **Vidas Ilimitadas** (Treinar sem medo de errar e sem esperar horas)
+  4. **Conversa com IA** (Prática de conversação inteligente nível Duolingo Max)
+  5. **Treinos Personalizados** (Revisão cirúrgica de erros)
 - **Cores Oficiais:**
   - Verde Duolingo: `#58CC02` (Hover / Borda 3D: `#46A302`)
   - Azul Elétrico: `#1CB0F6` (Hover / Borda 3D: `#1899D6`)
   - Amarelo Dourado: `#FFC800` (Hover / Borda 3D: `#E5A500`)
   - Vermelho Alerta: `#FF4B4B`
+  - Roxo / IA Duolingo Max: `#9333EA`
   - Fundo & Neutros: `#FFFFFF`, `#F7F7F7`, `#E5E5E5`, `#4B4B4B`
 - **Botões Estilo Duolingo ("Tactile 3D Buttons"):**
   - Botões arredondados com `border-b-4` em tom mais escuro.
